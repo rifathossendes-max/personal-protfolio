@@ -10,7 +10,7 @@
     --primary-color:#F26B0F;
     --text-backgroud-color:#15173D;
     --text-color:#B3A2AB;
-    --backgroud-color:#f2f4f8;
+    --backgroud-color:#070b14;
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 }
 /* Start of Header section  */
 header {
-    background: var(--text-backgroud-color);
+   background: var(--text-backgroud-color);
     color: var(--text-color);
     padding: 1rem 2rem;
     width: 100%;
@@ -62,7 +62,7 @@ header {
 
 /* End of Header section  */
 
-/* Start Of Main Section  */
+/* Start Of hero Section  */
 
 /* hero section  */
 .hero {
@@ -88,9 +88,12 @@ header {
 
 /* boro likha */
 .hero-text h1 {
+    width: 100vh;
+    color:var(--primary-color);
     font-size: 3.25rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 1.25rem;
+    text-shadow: 5px 5px 10px var(--primary-color);
 }
 
 /* Description paragraph  */
@@ -107,17 +110,19 @@ header {
 .btn {
     display: inline-block;
     padding: 1rem 2.2rem;
-    background: linear-gradient(45deg, #F26B0F, #e4a78d ); /* gradient color */
+    background: linear-gradient(45deg, #f07929, #e4a78d ); /* gradient color */
     color: white;
     text-decoration: none;
     border-radius: 2rem;
     font-weight: 600;
-    transition: all 0.4s ease;
+     transition: transform 100000ms;
+    /* transition: all 0.4s ease; */
     box-shadow: 0 10px 20px rgba(237, 130, 72, 0.4);
 }
 
 .btn:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-100000px);
+    /* transform: translateY(-5px) scale(1.05); */
     box-shadow: 0 15px 25px rgba(237, 130, 72, 0.6);
 }
 
@@ -139,19 +144,6 @@ header {
 
 }
 
-/* floating dots */
-/* .dots {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image:radial-gradient(#fff 2px, transparent 2px);
-    background-size: 1.56rem 1.56rem;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    animation:floatDots 6s linear infinite;
-} */
-
 /* Image  */
 .image-wrapper{
     width: 20rem;
@@ -166,6 +158,74 @@ header {
     box-shadow: 0 1.5rem 3rem gray;
 
 }
+
+
+/* about me section  */
+
+.about {
+    color: var(--text-color);
+    width: 90%;
+    box-shadow: 10px 15px 15px #414150;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.Grid__section_aria {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 30px;
+    padding: 30px 10px;
+}
+
+.Grid__section_aria h2 {
+
+    padding-bottom: 10px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.Grid__section_aria p {
+    line-height: 1.7;
+}
+
+
+/* footer {
+  display: flex;
+  width: 90%;
+  margin-top: 40px;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 5rem;
+  background: var(--footer-color);
+  color: white;
+}
+.follow-me h6 {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+
+.follow-me, ul {
+display: inline-block;
+padding: 1rem 0;
+}
+
+.email-phone a {
+  padding: 0.5em;
+  color: var(--text-color);
+  text-decoration: none;
+  line-height: 2;
+  
+}
+
+footer p {
+  color: var(--text-color);
+} */
+
+
+
 
 /* Left থেকে আসবে */
 @keyframes slideLeft{
@@ -190,20 +250,6 @@ header {
         transform:translateX(0);
     }
 }
-
-/* Image up down floating */
-/* @keyframes floatImage{
-    0%{ transform:translateY(0); }
-    50%{ transform:translateY(-15px); }
-    100%{ transform:translateY(0); }
-}
-
-/* Dots নিচে নামবে */
-/* @keyframes floatDots{
-    0%{ background-position:0 0; }
-    100%{ background-position:0 100px; }
-} */ 
-
 /* ===== Responsive ===== */
 @media(max-width:992px){
 
