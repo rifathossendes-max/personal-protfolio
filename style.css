@@ -224,7 +224,29 @@ footer p {
   color: var(--text-color);
 } */
 
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background: wheat;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background: var(--backgroud-color);
+}
 
+.follow-me {
+    display: flex;
+    flex-direction: row;
+    display: inline;
+}
+
+.email-phone a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-color);
+}
 
 
 /* Left থেকে আসবে */
